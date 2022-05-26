@@ -44,6 +44,13 @@ class Panel extends Element {
 	}
 }
 
+class Binding {
+	constructor (name, nameOverride) {
+		this.binding_name = "#" + name
+		this.binding_name_override = "#" + nameOverride
+	}
+}
+
 
 class Animation {
 	constructor (type, from, to, duration, easing, next) {
