@@ -28,6 +28,23 @@ class Label extends Element {
 	}
 }
 
+class Image extends Element {
+	constructor (text) {
+		super()
+		this.type = ElementTypes[0]
+		
+	}
+}
+
+class Panel extends Element {
+	constructor (text) {
+		super()
+		this.type = ElementTypes[0]
+		
+	}
+}
+
+
 class Animation {
 	constructor (type, from, to, duration, easing, next) {
 		this.anim_type = type
