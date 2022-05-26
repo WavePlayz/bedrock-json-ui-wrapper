@@ -2,6 +2,18 @@
 
 const ElementTypes = [ "label", "image", "panel" ]
 
+class Variable {
+	constructor () {
+		
+	}
+	
+	setVariable (name, value) {
+		this[name] = value
+	}
+	
+}
+
+
 class Element {
 	constructor () {
 		
@@ -24,6 +36,10 @@ class BJU {
 	
 	addElement (name, element) {
 		this[name] = element
+	}
+	
+	newElement (name) {
+		this[name]
 	}
 }
 
