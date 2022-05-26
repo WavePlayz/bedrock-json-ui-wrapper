@@ -14,19 +14,29 @@ class Variable {
 }
 
 
-class Element {
+class Element extends Variable {
 	constructor () {
-		
+		super()
 	}
 }
 
-class Label {
+class Label extends Element {
 	constructor (text) {
+		super()
 		this.type = ElementTypes[0]
 		this.text = text
 	}
 }
 
+class Animation {
+	constructor (type, from, to, duration, easing) {
+		this.anim_type = type
+		this.from = from
+		this.to = to
+		this.duration = duration
+		this.easing = easing
+	}
+}
 
 
 class BJU {
@@ -39,7 +49,7 @@ class BJU {
 	}
 	
 	newElement (name) {
-		this[name]
+		this[name] = 
 	}
 }
 
