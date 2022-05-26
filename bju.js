@@ -29,12 +29,13 @@ class Label extends Element {
 }
 
 class Animation {
-	constructor (type, from, to, duration, easing) {
+	constructor (type, from, to, duration, easing, next) {
 		this.anim_type = type
 		this.from = from
 		this.to = to
 		this.duration = duration
 		this.easing = easing
+		this.next = next
 	}
 }
 
